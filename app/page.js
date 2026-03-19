@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 export default function SiguldaHomesLandingPage() {
@@ -35,74 +38,154 @@ export default function SiguldaHomesLandingPage() {
     { title: "Guļamistaba", file: "/19_5X8A6266.jpg" },
     { title: "Skapis", file: "/20_5X8A6269 (1).jpg" },
     { title: "Telpa", file: "/21_5X8A6272.jpg" },
-    { title: "Telpa", file: "/22_5X8A6275.jpg" },
-    { title: "Telpa", file: "/23_5X8A6278.jpg" },
+    { title: "Kāpņu zona", file: "/22_5X8A6275.jpg" },
+    { title: "Kāpņu zona", file: "/23_5X8A6278.jpg" },
     { title: "Telpa", file: "/25_5X8A6284.jpg" },
   ];
 
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const openLightbox = (index) => setActiveIndex(index);
+  const closeLightbox = () => setActiveIndex(null);
+
+  const showPrev = () => {
+    setActiveIndex((prev) => (prev === 0 ? gallery.length - 1 : prev - 1));
+  };
+
+  const showNext = () => {
+    setActiveIndex((prev) => (prev === gallery.length - 1 ? 0 : prev + 1));
+  };
+
   return (
     <main className="page">
-
       {/* HERO */}
-      <section className="section hero">
-        <div className="container hero-grid">
-          <div>
-            <div className="pill">Sigulda</div>
-            <h1>Modernas mājas ģimenēm</h1>
-            <p className="lead">
-              Ilgtermiņa dzīvošanai Siguldā.
+      <section className="hero-fullscreen">
+        <Image
+          src="/73_5X8A6434 (1).jpg"
+          alt="Modernas mājas Siguldā"
+          fill
+          priority
+          className="hero-fullscreen-image"
+        />
+        <div className="hero-overlay" />
+        <div className="hero-content container">
+          <div className="hero-text-box">
+            <div className="pill pill-dark">Sigulda · Krišjāņa Barona iela 39</div>
+            <h1>Labākās mājas, labākajā vietā.</h1>
+            <p className="lead hero-lead">
+              Modernas mājas ģimenēm Siguldā — kvalitatīva ilgtermiņa dzīvesvieta.
             </p>
+
+            <div className="stats hero-stats">
+              <div className="card stat-card">
+                <div className="label">Platība</div>
+                <div className="value">145 m²</div>
+              </div>
+              <div className="card stat-card">
+                <div className="label">Cena</div>
+                <div className="value">2000 € / mēn.</div>
+              </div>
+              <div className="card stat-card">
+                <div className="label">Guļamistabas</div>
+                <div className="value">3</div>
+              </div>
+              <div className="card stat-card">
+                <div className="label">Vannasistabas</div>
+                <div className="value">3</div>
+              </div>
+            </div>
 
             <div className="button-row">
               <a href="#kontakti" className="button button-dark">
                 Pieteikt apskati
               </a>
+              <a href="#galerija" className="button button-light">
+                Skatīt galeriju
+              </a>
             </div>
-          </div>
-
-          <div className="hero-image-wrap">
-            <Image
-              src="/73_5X8A6434 (1).jpg"
-              alt="Mājas ārpuse"
-              fill
-              className="hero-image"
-            />
           </div>
         </div>
       </section>
 
-      {/* INFO */}
-      <section className="section">
+      {/* ABOUT */}
+      <section className="section section-warm">
         <div className="container two-col">
           <div>
-            <h2>Par īpašumu</h2>
+            <h2>Par māju</h2>
             <p className="text">
-              Jaunas, modernas mājas Siguldā ar pārdomātu plānojumu ģimenēm.
+              Īrei pieejamas 6 mājas jeb 3 dvīņu mājas Siguldā, Krišjāņa Barona ielā 39.
+              Mājas paredzētas ilgtermiņa dzīvošanai ģimenēm, kurām svarīga ir kvalitatīva
+              vide, moderna apdare un ērta atrašanās vieta.
+            </p>
+            <p className="text">
+              Katra māja ir daļēji aprīkota, ar pilnībā aprīkotu virtuvi, iebūvētiem skapjiem,
+              ofisa telpu, saimniecības telpu un vietu divām automašīnām zem nojumes.
             </p>
           </div>
 
-          <div className="card info-card">
+          <div className="card info-card warm-card">
+            <h3>Galvenā informācija</h3>
             <div className="info-list">
-              {features.map((item, i) => (
-                <div key={i} className="info-row">
-                  <span>{item}</span>
-                </div>
-              ))}
+              <div className="info-row">
+                <span>Adrese</span>
+                <strong>Krišjāņa Barona iela 39, Sigulda</strong>
+              </div>
+              <div className="info-row">
+                <span>Īres maksa</span>
+                <strong>2000 € mēnesī</strong>
+              </div>
+              <div className="info-row">
+                <span>Platība</span>
+                <strong>145 m²</strong>
+              </div>
+              <div className="info-row">
+                <span>Māju skaits projektā</span>
+                <strong>6 mājas / 3 dvīņu mājas</strong>
+              </div>
+              <div className="info-row no-border">
+                <span>Kontakts</span>
+                <strong>Ingus · +371 29384845</strong>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FEATURES */}
+      <section className="section section-soft">
+        <div className="container">
+          <h2>Plānojums un aprīkojums</h2>
+          <p className="section-intro">
+            Svarīgākā informācija par telpām un iekļauto aprīkojumu.
+          </p>
+
+          <div className="feature-grid">
+            {features.map((feature) => (
+              <div key={feature} className="card feature-card warm-card">
+                {feature}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* GALLERY */}
-      <section className="section section-alt">
+      <section id="galerija" className="section section-warm">
         <div className="container">
-          <h2>Galerija</h2>
-          <p className="section-intro">Interjera un eksterjera attēli.</p>
+          <h2>Foto galerija</h2>
+          <p className="section-intro">
+            Uzspied uz bildes, lai atvērtu galeriju un pāršķirstītu visus attēlus.
+          </p>
 
-          <div className="gallery-grid">
-            {gallery.map((item) => (
-              <div key={item.file} className="card gallery-card">
-                <div className="gallery-image-wrap">
+          <div className="gallery-grid large-gallery-grid">
+            {gallery.map((item, index) => (
+              <button
+                key={item.file}
+                className="gallery-card gallery-card-button"
+                onClick={() => openLightbox(index)}
+                type="button"
+              >
+                <div className="gallery-image-wrap large-gallery-image-wrap">
                   <Image
                     src={item.file}
                     alt={item.title}
@@ -110,94 +193,70 @@ export default function SiguldaHomesLandingPage() {
                     className="gallery-image"
                   />
                 </div>
-                <div className="gallery-text">
-                  <div className="gallery-title">{item.title}</div>
-                </div>
-              </div>
+              </button>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FLOOR PLAN */}
+      <section className="section section-soft">
+        <div className="container">
+          <h2>Plānojums</h2>
+          <p className="section-intro">
+            Skatīt pilnu mājas plānu PDF formātā.
+          </p>
+
+          <a
+            href="/floor-plan.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button button-dark"
+          >
+            Atvērt plānojumu
+          </a>
         </div>
       </section>
 
       {/* LOCATION */}
-      <section className="section">
-        <div className="container">
-          <h2>Lokācija</h2>
-          <p className="text">
-            Mājas atrodas Siguldas pilsētas daļā ar ērtu piekļuvi ikdienas vietām.
-          </p>
+      <section className="section section-warm">
+        <div className="container two-col">
+          <div>
+            <h2>Lokācija</h2>
+            <p className="text">
+              Mājas atrodas Siguldas pilsētas daļā ar ērtu piekļuvi ģimenes ikdienai
+              svarīgākajām vietām. Skolas, bērnudārzs, sporta centrs, stadions,
+              pilsētas trase, veikals un bērnu laukumiņš atrodas dažu minūšu attālumā.
+            </p>
 
-          <div className="location-grid">
-            {locationItems.map((item, i) => (
-              <div key={i} className="card location-card">
-                {item}
-              </div>
-            ))}
+            <div className="location-grid">
+              {locationItems.map((item) => (
+                <div key={item} className="card location-card warm-card">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="card info-card warm-card">
+            <h3>Kam šīs mājas piemērotas</h3>
+            <p className="text">
+              Ģimenēm un jaunajām ģimenēm, kas meklē ilgtermiņa mājvietu Siguldā ar
+              modernu vidi, privātumu un ērtu ikdienas loģistiku.
+            </p>
           </div>
         </div>
       </section>
 
-{/* FLOOR PLAN */}
-<section className="section section-alt">
-  <div className="container">
-    <h2>Plānojums</h2>
-    <p className="section-intro">
-      Skatīt pilnu mājas plānu PDF formātā.
-    </p>
-
-    <div className="floorplan-card">
-      <a
-        href="/floorplan.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="floorplan-link"
-      >
-        <div className="floorplan-preview">
-          <div className="floorplan-preview-inner">
-            Floor plan
-          </div>
-        </div>
-
-        <div className="floorplan-text">
-          <div className="floorplan-title">Atvērt plānojumu</div>
-          <div className="floorplan-subtitle">
-            Atver PDF, lai skatītu pilnā izmērā un pietuvinātu
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-{/* PLĀNOJUMS */}
-<section className="section section-alt">
-  <div className="container">
-    <h2>Plānojums</h2>
-
-    <p className="section-intro">
-      Skatīt pilnu plānojumu:
-    </p>
-
-    <a
-      href="/floor-plan.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="button button-dark"
-    >
-      Atvērt plānojumu
-    </a>
-
-  </div>
-</section>
-
       {/* CONTACT */}
-      <section id="kontakti" className="section">
+      <section id="kontakti" className="section section-soft">
         <div className="container">
-          <div className="contact-box">
+          <div className="contact-box warm-contact-box">
             <div>
               <h2>Piesakiet apskati</h2>
               <p className="contact-text">
-                Sazinieties pa tālruni, lai vienotos par apskates laiku.
+                Lai saņemtu papildu informāciju vai vienotos par apskates laiku,
+                sazinieties pa tālruni.
               </p>
             </div>
 
@@ -206,7 +265,6 @@ export default function SiguldaHomesLandingPage() {
                 <div className="contact-label">Kontakts</div>
                 <div className="contact-value">Ingus</div>
               </div>
-
               <div>
                 <div className="contact-label">Tālrunis</div>
                 <a href="tel:+37129384845" className="contact-link">
@@ -218,6 +276,55 @@ export default function SiguldaHomesLandingPage() {
         </div>
       </section>
 
+      {/* LIGHTBOX */}
+      {activeIndex !== null && (
+        <div className="lightbox" onClick={closeLightbox}>
+          <button
+            type="button"
+            className="lightbox-close"
+            onClick={closeLightbox}
+          >
+            ×
+          </button>
+
+          <button
+            type="button"
+            className="lightbox-nav lightbox-prev"
+            onClick={(e) => {
+              e.stopPropagation();
+              showPrev();
+            }}
+          >
+            ‹
+          </button>
+
+          <div
+            className="lightbox-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="lightbox-image-wrap">
+              <Image
+                src={gallery[activeIndex].file}
+                alt={gallery[activeIndex].title}
+                fill
+                className="lightbox-image"
+              />
+            </div>
+            <div className="lightbox-caption">{gallery[activeIndex].title}</div>
+          </div>
+
+          <button
+            type="button"
+            className="lightbox-nav lightbox-next"
+            onClick={(e) => {
+              e.stopPropagation();
+              showNext();
+            }}
+          >
+            ›
+          </button>
+        </div>
+      )}
     </main>
   );
 }
