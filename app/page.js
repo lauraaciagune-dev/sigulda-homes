@@ -5,7 +5,6 @@ import Image from "next/image";
 
 export default function SiguldaHomesLandingPage() {
   const features = [
-    const features = [
   "145 m²",
   "2 stāvi",
   "3 guļamistabas",
