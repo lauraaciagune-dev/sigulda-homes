@@ -225,25 +225,21 @@ export default function SiguldaHomesLandingPage() {
     <div>
       <h2>Lokācija</h2>
       <p className="text">
-        Mājas atrodas Siguldas pilsētas daļā ar ērtu piekļuvi ģimenes ikdienai
-        svarīgākajām vietām. Skolas, bērnudārzs, sporta centrs, stadions,
-        pilsētas trase, veikals un bērnu laukumiņš atrodas dažu minūšu attālumā.
+        Mājas atrodas Siguldas pilsētas centrālajā daļā, mierīgā un drošā vidē,
+        kas ir īpaši piemērota ģimenēm.
       </p>
 
-      <div className="location-grid">
-        {locationItems.map((item) => (
-          <div key={item} className="card location-card warm-card">
-            {item}
-          </div>
-        ))}
-      </div>
+      <p className="text">
+        Dažu minūšu attālumā pieejamas skolas, bērnudārzs, sporta centrs,
+        stadions, pilsētas trase, pārtikas veikals un bērnu laukumiņš.
+      </p>
     </div>
 
     <div className="card info-card warm-card">
       <h3>Kam šīs mājas piemērotas</h3>
       <p className="text">
         Ģimenēm un jaunajām ģimenēm, kas meklē ilgtermiņa mājvietu Siguldā ar
-        modernu vidi, privātumu un ērtu ikdienas loģistiku.
+        ērtu ikdienas loģistiku, privātumu un kvalitatīvu dzīves vidi.
       </p>
     </div>
   </div>
