@@ -111,50 +111,66 @@ export default function SiguldaHomesLandingPage() {
         </div>
       </section>
 
-      {/* ABOUT */}
-      <section className="section section-warm">
-        <div className="container two-col">
-          <div>
-            <h2>Par māju</h2>
-            <p className="text">
-              Īrei pieejamas 6 mājas (3 dvīņu mājas) Siguldā, Krišjāņa Barona ielā 39.
-              Mājas paredzētas ilgtermiņa dzīvošanai ģimenēm, kurām svarīga kvalitatīva
-              vide, moderna apdare un ērta atrašanās vieta.
-            </p>
-            <p className="text">
-              Katra māja ir daļēji aprīkota - pilnībā aprīkota virtuve, iebūvēti skapji, veļas istaba,
-             terase ar nojumi, gaisa kondicjonieri, gaisa rekuperācijas sistēma, signalizācijas sistēma un citi noderīgi papildinājumi.
-            </p>
-          </div>
+     {/* ABOUT */}
+<section className="section section-warm">
+  <div className="container two-col about-grid">
+    <div className="about-copy">
+      <div className="section-tag">Ģimenēm piemērota dzīvesvieta</div>
+      <h2>Par māju</h2>
 
-          <div className="card info-card warm-card">
-            <h3>Galvenā informācija</h3>
-            <div className="info-list">
-              <div className="info-row">
-                <span>Adrese</span>
-                <strong>Krišjāņa Barona iela 39, Sigulda</strong>
-              </div>
-              <div className="info-row">
-                <span>Īres maksa</span>
-                <strong>2000 € mēnesī</strong>
-              </div>
-              <div className="info-row">
-                <span>Platība</span>
-                <strong>145 m²</strong>
-              </div>
-              <div className="info-row">
-                <span>Māju skaits projektā</span>
-                <strong>6 mājas / 3 dvīņu mājas</strong>
-              </div>
-              <div className="info-row no-border">
-                <span>Kontakts</span>
-                <strong>Ingus · +371 29384845</strong>
-              </div>
-            </div>
-          </div>
+      <p className="text">
+        Īrei pieejamas 6 mājas (3 dvīņu mājas) Siguldā, Krišjāņa Barona ielā 39.
+        Mājas paredzētas ilgtermiņa dzīvošanai ģimenēm, kurām svarīga kvalitatīva
+        vide, moderna apdare un ērta atrašanās vieta.
+      </p>
+
+      <p className="text">
+        Katra māja ir daļēji aprīkota — pilnībā aprīkota virtuve, iebūvēti skapji,
+        veļas istaba, terase ar nojumi, gaisa kondicionieri, gaisa rekuperācijas
+        sistēma, signalizācijas sistēma un citi noderīgi papildinājumi.
+      </p>
+
+      <div className="about-highlight-row">
+        <div className="about-highlight-card">
+          <div className="about-highlight-value">145 m²</div>
+          <div className="about-highlight-label">Plaša dzīvojamā platība</div>
         </div>
-      </section>
 
+        <div className="about-highlight-card">
+          <div className="about-highlight-value">3 guļamistabas</div>
+          <div className="about-highlight-label">Piemērota ģimenes ikdienai</div>
+        </div>
+      </div>
+    </div>
+
+    <div className="card info-card warm-card info-card-strong">
+      <h3>Galvenā informācija</h3>
+      <div className="info-list">
+        <div className="info-row">
+          <span>Adrese</span>
+          <strong>Krišjāņa Barona iela 39, Sigulda</strong>
+        </div>
+        <div className="info-row">
+          <span>Īres maksa</span>
+          <strong>2000 € mēnesī</strong>
+        </div>
+        <div className="info-row">
+          <span>Platība</span>
+          <strong>145 m²</strong>
+        </div>
+        <div className="info-row">
+          <span>Māju skaits projektā</span>
+          <strong>6 mājas / 3 dvīņu mājas</strong>
+        </div>
+        <div className="info-row no-border">
+          <span>Kontakts</span>
+          <strong>Ingus · +371 29384845</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
       {/* FEATURES */}
       <section className="section section-soft">
         <div className="container">
