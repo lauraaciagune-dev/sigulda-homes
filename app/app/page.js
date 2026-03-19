@@ -1,0 +1,252 @@
+import Image from "next/image";
+
+export default function SiguldaHomesLandingPage() {
+  const features = [
+    "145 m²",
+    "2 stāvi",
+    "3 guļamistabas",
+    "3 vannasistabas",
+    "Pilnībā aprīkota virtuve",
+    "Gaisa kondicionieris",
+    "Signalizācijas sistēma",
+    "Ofisa telpa",
+    "Saimniecības telpa",
+    "2 automašīnu nojume",
+  ];
+
+  const locationItems = [
+    "Skolas",
+    "Bērnudārzs",
+    "Sporta centrs",
+    "Stadions",
+    "Pilsētas trase",
+    "Pārtikas veikals",
+    "Bērnu laukumiņš",
+  ];
+
+  const gallery = [
+    { title: "Mājas ārpuse", file: "/73_5X8A6434 (1).jpg" },
+    { title: "Mājas ārpuse", file: "/77_5X8A6446.jpg" },
+    { title: "Vannas istaba", file: "/10_5X8A6239.jpg" },
+    { title: "Saimniecības telpa", file: "/12_5X8A6245.jpg" },
+    { title: "Dušas zona", file: "/14_5X8A6251.jpg" },
+    { title: "Sanmezgls", file: "/15_5X8A6254 (1).jpg" },
+    { title: "Guļamistaba", file: "/17_5X8A6260.jpg" },
+    { title: "Guļamistaba", file: "/19_5X8A6266.jpg" },
+    { title: "Skapis", file: "/20_5X8A6269 (1).jpg" },
+    { title: "Kāpņu zona", file: "/22_5X8A6275.jpg" },
+    { title: "Kāpņu zona", file: "/23_5X8A6278.jpg" },
+    { title: "Kondicionieris", file: "/21_5X8A6272.jpg" },
+  ];
+
+  return (
+    <main className="page">
+      <section className="hero section">
+        <div className="container hero-grid">
+          <div>
+            <div className="pill">Sigulda · Krišjāņa Barona iela 39</div>
+
+            <h1>Labākās mājas, labākajā vietā.</h1>
+
+            <p className="lead">
+              Modernas mājas ģimenēm Siguldā — kvalitatīva ilgtermiņa dzīvesvieta.
+            </p>
+
+            <p className="muted">
+              Īrei pieejamas 6 mājas jeb 3 dvīņu mājas. Katra māja paredzēta
+              ģimenes ikdienai ar kvalitatīvu apdari un praktisku aprīkojumu
+              ilgtermiņa dzīvošanai.
+            </p>
+
+            <div className="stats">
+              <div className="card stat-card">
+                <div className="label">Platība</div>
+                <div className="value">145 m²</div>
+              </div>
+              <div className="card stat-card">
+                <div className="label">Cena</div>
+                <div className="value">2000 € / mēn.</div>
+              </div>
+              <div className="card stat-card">
+                <div className="label">Guļamistabas</div>
+                <div className="value">3</div>
+              </div>
+              <div className="card stat-card">
+                <div className="label">Vannasistabas</div>
+                <div className="value">3</div>
+              </div>
+            </div>
+
+            <div className="button-row">
+              <a href="tel:+37129384845" className="button button-dark">
+                Zvanīt Ingum
+              </a>
+              <a href="#kontakti" className="button button-light">
+                Kontaktinformācija
+              </a>
+            </div>
+          </div>
+
+          <div className="hero-image-wrap">
+            <Image
+              src="/73_5X8A6434 (1).jpg"
+              alt="Mājas ārpuse Siguldā"
+              fill
+              priority
+              className="hero-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container two-col">
+          <div>
+            <h2>Par māju</h2>
+            <p className="text">
+              Šīs mājas ir piemērotas ģimenēm, kurām svarīga ir kvalitatīva
+              dzīvesvieta Siguldā ar ērtu piekļuvi ikdienā svarīgākajām vietām.
+              Māja ir daļēji aprīkota un paredzēta ilgtermiņa dzīvošanai.
+              Interjerā izmantoti kvalitatīvi materiāli, ir iebūvēti skapji,
+              pilnībā aprīkota virtuve un praktiskas papildtelpas.
+            </p>
+            <p className="text">
+              Piedāvājumā ir 6 mājas jeb 3 dvīņu mājas adresē Krišjāņa Barona
+              iela 39, Sigulda. Lokācija ir pilsētas centrālajā daļā, drošā
+              apkārtnē, no kuras dažu minūšu gājienā sasniedzamas ģimenēm
+              svarīgas vietas.
+            </p>
+          </div>
+
+          <div className="card info-card">
+            <h3>Galvenā informācija</h3>
+            <div className="info-list">
+              <div className="info-row">
+                <span>Adrese</span>
+                <strong>Krišjāņa Barona iela 39, Sigulda</strong>
+              </div>
+              <div className="info-row">
+                <span>Īres maksa</span>
+                <strong>2000 € mēnesī</strong>
+              </div>
+              <div className="info-row">
+                <span>Platība</span>
+                <strong>145 m²</strong>
+              </div>
+              <div className="info-row">
+                <span>Māju skaits projektā</span>
+                <strong>6 mājas / 3 dvīņu mājas</strong>
+              </div>
+              <div className="info-row no-border">
+                <span>Kontakts</span>
+                <strong>Ingus · +371 29384845</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <h2>Plānojums un aprīkojums</h2>
+          <p className="section-intro">
+            Svarīgākā informācija par katras mājas telpām un iekļauto aprīkojumu.
+          </p>
+
+          <div className="feature-grid">
+            {features.map((feature) => (
+              <div key={feature} className="card feature-card">
+                {feature}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <h2>Foto galerija</h2>
+          <p className="section-intro">
+            Interjera un eksterjera attēli.
+          </p>
+
+          <div className="gallery-grid">
+            {gallery.map((item) => (
+              <div key={item.file} className="card gallery-card">
+                <div className="gallery-image-wrap">
+                  <Image
+                    src={item.file}
+                    alt={item.title}
+                    fill
+                    className="gallery-image"
+                  />
+                </div>
+                <div className="gallery-text">
+                  <div className="gallery-title">{item.title}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container two-col">
+          <div>
+            <h2>Lokācija</h2>
+            <p className="text">
+              Mājas atrodas Siguldas pilsētas daļā ar ērtu piekļuvi ģimenes
+              ikdienai svarīgākajām vietām. Skolas, bērnudārzs, sporta centrs,
+              stadions, pilsētas trase, veikals un bērnu laukumiņš atrodas dažu
+              minūšu attālumā.
+            </p>
+
+            <div className="location-grid">
+              {locationItems.map((item) => (
+                <div key={item} className="card location-card">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="card info-card">
+            <h3>Kam šīs mājas piemērotas</h3>
+            <p className="text">
+              Ģimenēm un jaunajām ģimenēm, kas meklē ilgtermiņa mājvietu
+              Siguldā ar mūsdienīgu vidi, privātumu un ērtu ikdienas
+              loģistiku.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakti" className="section">
+        <div className="container">
+          <div className="contact-box">
+            <div>
+              <h2>Piesakiet apskati</h2>
+              <p className="contact-text">
+                Lai saņemtu papildu informāciju vai vienotos par apskates laiku,
+                sazinieties pa tālruni.
+              </p>
+            </div>
+
+            <div className="contact-card">
+              <div>
+                <div className="contact-label">Kontakts</div>
+                <div className="contact-value">Ingus</div>
+              </div>
+              <div>
+                <div className="contact-label">Tālrunis</div>
+                <a href="tel:+37129384845" className="contact-link">
+                  +371 29384845
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
