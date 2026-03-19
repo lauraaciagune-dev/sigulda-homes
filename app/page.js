@@ -5,17 +5,21 @@ import Image from "next/image";
 
 export default function SiguldaHomesLandingPage() {
   const features = [
-    "145 m²",
-    "2 stāvi",
-    "3 guļamistabas",
-    "3 vannasistabas",
-    "Pilnībā aprīkota virtuve",
-    "Gaisa kondicionieris",
-    "Signalizācijas sistēma",
-    "Ofisa telpa",
-    "Saimniecības telpa",
-    "2 automašīnu nojume",
-  ];
+    const features = [
+  "145 m²",
+  "2 stāvi",
+  "3 guļamistabas",
+  "3 vannasistabas",
+  "Pilnībā aprīkota virtuve",
+  "Gaisa kondicionieri",
+  "Gaisa rekuperācijas sistēma",
+  "Signalizācijas sistēma",
+  "Ofisa telpa",
+  "Veļas istaba",
+  "Saimniecības telpa",
+  "Terase ar nojumi",
+  "2 automašīnu nojume",
+];
 
   const locationItems = [
     "Skolas",
