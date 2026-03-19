@@ -8,9 +8,8 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
   color: #18181b;
-  background: #ffffff;
+  background: #9C9488;
 }
 
 a {
@@ -364,4 +363,10 @@ h3 {
   .contact-link {
     font-size: 22px;
   }
+}
+.page {
+  background: white;
+  margin: 20px;
+  border-radius: 24px;
+  overflow: hidden;
 }
