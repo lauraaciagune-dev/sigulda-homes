@@ -147,7 +147,7 @@ export default function SiguldaHomesLandingPage() {
 
     <div className="floorplan-card">
       <a
-        href="/floor-plan.pdf"
+        href="/floorplan.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="floorplan-link"
