@@ -252,30 +252,30 @@ export default function SiguldaHomesLandingPage() {
         </div>
       </div>
 
-    <div className="map-shell">
+      <div className="map-shell">
         <div className="map-box">
           <iframe
             src="https://www.google.com/maps?q=Krišjāņa+Barona+iela+39+Sigulda&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Krišjāņa Barona iela 39, Sigulda"
-          ></iframe>
+          />
         </div>
-       <div className="button-row">
-        <a
-          href="https://www.google.com/maps/search/?api=1&query=Krišjāņa+Barona+iela+39,+Sigulda"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="button button-dark"
-        >
-          Atvērt Google Maps
-        </a>
-      </div>
-    </div>
+
+        <div className="button-row">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Krišjāņa+Barona+iela+39,+Sigulda"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button button-dark"
+          >
+            Atvērt Google Maps
+          </a>
+        </div>
       </div>
     </div>
   </div>
