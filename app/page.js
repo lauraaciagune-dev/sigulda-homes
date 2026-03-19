@@ -233,7 +233,6 @@ export default function SiguldaHomesLandingPage() {
 <section className="section section-soft">
   <div className="container location-layout">
     <div className="location-copy">
-      <div className="section-tag">Ikdienā viss sasniedzams ātri</div>
       <h2>Lokācija</h2>
 
       <p className="text">
@@ -253,20 +252,7 @@ export default function SiguldaHomesLandingPage() {
         </div>
       </div>
 
-      <div className="button-row">
-        <a
-          href="https://www.google.com/maps/search/?api=1&query=Krišjāņa+Barona+iela+39,+Sigulda"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="button button-dark"
-        >
-          Atvērt Google Maps
-        </a>
-      </div>
-    </div>
-
     <div className="map-shell">
-      <div className="map-combo">
         <div className="map-box">
           <iframe
             src="https://www.google.com/maps?q=Krišjāņa+Barona+iela+39+Sigulda&output=embed"
@@ -279,18 +265,17 @@ export default function SiguldaHomesLandingPage() {
             title="Krišjāņa Barona iela 39, Sigulda"
           ></iframe>
         </div>
-
-        <div className="street-view-box">
-          <iframe
-            src="https://www.google.com/maps?q=&layer=c&cbll=57.1530,24.8590&cbp=11,0,0,0,0"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            title="Street View"
-          ></iframe>
-        </div>
+       <div className="button-row">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Krišjāņa+Barona+iela+39,+Sigulda"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button button-dark"
+        >
+          Atvērt Google Maps
+        </a>
+      </div>
+    </div>
       </div>
     </div>
   </div>
