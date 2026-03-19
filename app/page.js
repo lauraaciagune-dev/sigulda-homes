@@ -113,13 +113,13 @@ export default function SiguldaHomesLandingPage() {
           <div>
             <h2>Par māju</h2>
             <p className="text">
-              Īrei pieejamas 6 mājas jeb 3 dvīņu mājas Siguldā, Krišjāņa Barona ielā 39.
-              Mājas paredzētas ilgtermiņa dzīvošanai ģimenēm, kurām svarīga ir kvalitatīva
+              Īrei pieejamas 6 mājas (3 dvīņu mājas) Siguldā, Krišjāņa Barona ielā 39.
+              Mājas paredzētas ilgtermiņa dzīvošanai ģimenēm, kurām svarīga kvalitatīva
               vide, moderna apdare un ērta atrašanās vieta.
             </p>
             <p className="text">
-              Katra māja ir daļēji aprīkota, ar pilnībā aprīkotu virtuvi, iebūvētiem skapjiem,
-              ofisa telpu, saimniecības telpu un vietu divām automašīnām zem nojumes.
+              Katra māja ir daļēji aprīkota - pilnībā aprīkota virtuve, iebūvēti skapji, veļas istaba,
+             terase ar nojumi, gaisa kondicjonieri, gaisa rekuperācijas sistēma, signalizācijas sistēma un citi noderīgi papildinājumi.
             </p>
           </div>
 
@@ -174,7 +174,7 @@ export default function SiguldaHomesLandingPage() {
         <div className="container">
           <h2>Foto galerija</h2>
           <p className="section-intro">
-            Uzspied uz bildes, lai atvērtu galeriju un pāršķirstītu visus attēlus.
+          
           </p>
 
           <div className="gallery-grid large-gallery-grid">
@@ -202,9 +202,9 @@ export default function SiguldaHomesLandingPage() {
     {/* FLOOR PLAN */}
 <section className="section section-soft">
   <div className="container">
-    <h2>Plānojums</h2>
+    <h2>Mājas plānojums</h2>
     <p className="section-intro">
-      Skatīt pilnu mājas plānu PDF formātā.
+      
     </p>
 
     <a
@@ -225,21 +225,14 @@ export default function SiguldaHomesLandingPage() {
     <div>
       <h2>Lokācija</h2>
       <p className="text">
-        Mājas atrodas Siguldas pilsētas centrālajā daļā, mierīgā un drošā vidē,
-        kas ir īpaši piemērota ģimenēm.
+        Mājas atrodas Siguldas pilsētas centrālajā daļā, mierīgā un drošā vidē - īpaši piemērotā ģimenēm.
+    
       </p>
 
       <p className="text">
-        Dažu minūšu attālumā pieejamas skolas, bērnudārzs, sporta centrs,
-        stadions, pilsētas trase, pārtikas veikals un bērnu laukumiņš.
-      </p>
-    </div>
-
-    <div className="card info-card warm-card">
-      <h3>Kam šīs mājas piemērotas</h3>
-      <p className="text">
-        Ģimenēm un jaunajām ģimenēm, kas meklē ilgtermiņa mājvietu Siguldā ar
-        ērtu ikdienas loģistiku, privātumu un kvalitatīvu dzīves vidi.
+        Viss nepieciešamais komfortablai ikdienai ir pieejams vien pāris minūšu gājiena attālumā - skola, 
+  bērnudārzs, sporta centrs, pārtikas veikals, kultūras nams, mežs un viss kas cits. Mājas atrodas pilsētas 
+  epicentrā, fantastiskākā lokācija ģimenēm ar bērniem.
       </p>
     </div>
   </div>
