@@ -239,24 +239,68 @@ export default function SiguldaHomesLandingPage() {
 </section>
 
 {/* LOCATION */}
-<section className="section section-warm">
-  <div className="container two-col">
-    <div>
+<section className="section section-soft">
+  <div className="container location-layout">
+    <div className="location-copy">
+      <div className="section-tag">Ikdienā viss sasniedzams ātri</div>
       <h2>Lokācija</h2>
+
       <p className="text">
-        Mājas atrodas Siguldas pilsētas centrālajā daļā, mierīgā un drošā vidē - īpaši piemērotā ģimenēm.
-    
+        Mājas atrodas Siguldas pilsētas centrālajā daļā, mierīgā un drošā vidē,
+        kas ir īpaši piemērota ģimenēm.
       </p>
 
       <p className="text">
-        Viss nepieciešamais komfortablai ikdienai ir pieejams vien pāris minūšu gājiena attālumā - skola, 
-  bērnudārzs, sporta centrs, pārtikas veikals, kultūras nams, mežs un viss kas cits. Mājas atrodas pilsētas 
-  epicentrā, fantastiskākā lokācija ģimenēm ar bērniem.
+        Dažu minūšu gājiena attālumā pieejamas skolas, bērnudārzs, sporta centrs,
+        stadions, pilsētas trase, pārtikas veikals un bērnu laukumiņš.
       </p>
+
+      <div className="location-address-box">
+        <div className="location-address-label">Adrese</div>
+        <div className="location-address-value">
+          Krišjāņa Barona iela 39, Sigulda
+        </div>
+      </div>
+
+      <div className="button-row">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Krišjāņa+Barona+iela+39,+Sigulda"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button button-dark"
+        >
+          Atvērt Google Maps
+        </a>
+      </div>
     </div>
-  </div>
-</section>
 
+    <div className="map-shell">
+      <div className="map-box">
+       <div className="map-combo">
+  {/* MAP */}
+  <div className="map-box">
+    <iframe
+      src="https://www.google.com/maps?q=Krišjāņa+Barona+iela+39+Sigulda&output=embed"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+
+  {/* STREET VIEW */}
+  <div className="street-view-box">
+    <iframe
+      src="https://www.google.com/maps?q=&layer=c&cbll=57.1530,24.8590&cbp=11,0,0,0,0"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
       {/* CONTACT */}
       <section id="kontakti" className="section section-soft">
         <div className="container">
@@ -337,3 +381,136 @@ export default function SiguldaHomesLandingPage() {
     </main>
   );
 }
+.section-tag {
+  display: inline-flex;
+  margin-bottom: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(32, 27, 23, 0.08);
+  color: #4e473f;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.about-grid {
+  align-items: start;
+}
+
+.about-copy {
+  max-width: 760px;
+}
+
+.about-highlight-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.about-highlight-card {
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.52);
+  border: 1px solid rgba(32, 27, 23, 0.08);
+  box-shadow: 0 10px 26px rgba(34, 28, 22, 0.05);
+}
+
+.about-highlight-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #201b17;
+}
+
+.about-highlight-label {
+  margin-top: 6px;
+  color: #5a534c;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.info-card-strong {
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 18px 36px rgba(34, 28, 22, 0.08);
+}
+
+.location-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 34px;
+  align-items: stretch;
+}
+
+.location-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-address-box {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  padding: 18px 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(32, 27, 23, 0.08);
+  box-shadow: 0 10px 26px rgba(34, 28, 22, 0.05);
+}
+
+.location-address-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6c645b;
+  letter-spacing: 0.02em;
+}
+
+.location-address-value {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #201b17;
+  line-height: 1.5;
+}
+
+.map-shell {
+  display: flex;
+  align-items: stretch;
+}
+
+.map-box {
+  width: 100%;
+  min-height: 460px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 18px 38px rgba(34, 28, 22, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 980px) {
+  .location-layout,
+  .about-highlight-row {
+    grid-template-columns: 1fr;
+  }
+
+  .map-box {
+    min-height: 380px;
+  }
+}
+.map-combo {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+.map-box,
+.street-view-box {
+  width: 100%;
+  height: 240px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(34, 28, 22, 0.12);
+}
+
