@@ -20,15 +20,6 @@ export default function SiguldaHomesLandingPage() {
   "2 automašīnu nojume",
 ];
 
-  const locationItems = [
-    "Skolas",
-    "Bērnudārzs",
-    "Sporta centrs",
-    "Stadions",
-    "Pilsētas trase",
-    "Pārtikas veikals",
-    "Bērnu laukumiņš",
-  ];
 
   const gallery = [
     { title: "Mājas ārpuse", file: "/73_5X8A6434 (1).jpg" },
@@ -275,59 +266,63 @@ export default function SiguldaHomesLandingPage() {
     </div>
 
     <div className="map-shell">
-      <div className="map-box">
-       <div className="map-combo">
-  {/* MAP */}
-  <div className="map-box">
-    <iframe
-      src="https://www.google.com/maps?q=Krišjāņa+Barona+iela+39+Sigulda&output=embed"
-      width="100%"
-      height="100%"
-      style={{ border: 0 }}
-      allowFullScreen=""
-      loading="lazy"
-    ></iframe>
-  </div>
-
-  {/* STREET VIEW */}
-  <div className="street-view-box">
-    <iframe
-      src="https://www.google.com/maps?q=&layer=c&cbll=57.1530,24.8590&cbp=11,0,0,0,0"
-      width="100%"
-      height="100%"
-      style={{ border: 0 }}
-      allowFullScreen=""
-      loading="lazy"
-    ></iframe>
-  </div>
-</div>
-      {/* CONTACT */}
-      <section id="kontakti" className="section section-soft">
-        <div className="container">
-          <div className="contact-box warm-contact-box">
-            <div>
-              <h2>Piesakiet apskati</h2>
-              <p className="contact-text">
-                Lai saņemtu papildu informāciju vai vienotos par apskates laiku,
-                sazinieties pa tālruni.
-              </p>
-            </div>
-
-            <div className="contact-card">
-              <div>
-                <div className="contact-label">Kontakts</div>
-                <div className="contact-value">Ingus</div>
-              </div>
-              <div>
-                <div className="contact-label">Tālrunis</div>
-                <a href="tel:+37129384845" className="contact-link">
-                  +371 29384845
-                </a>
-              </div>
-            </div>
-          </div>
+      <div className="map-combo">
+        <div className="map-box">
+          <iframe
+            src="https://www.google.com/maps?q=Krišjāņa+Barona+iela+39+Sigulda&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Krišjāņa Barona iela 39, Sigulda"
+          ></iframe>
         </div>
-      </section>
+
+        <div className="street-view-box">
+          <iframe
+            src="https://www.google.com/maps?q=&layer=c&cbll=57.1530,24.8590&cbp=11,0,0,0,0"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            title="Street View"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* CONTACT */}
+<section id="kontakti" className="section section-soft">
+  <div className="container">
+    <div className="contact-box warm-contact-box">
+      <div>
+        <h2>Piesakiet apskati</h2>
+        <p className="contact-text">
+          Lai saņemtu papildu informāciju vai vienotos par apskates laiku,
+          sazinieties pa tālruni.
+        </p>
+      </div>
+
+      <div className="contact-card">
+        <div>
+          <div className="contact-label">Kontakts</div>
+          <div className="contact-value">Ingus</div>
+        </div>
+        <div>
+          <div className="contact-label">Tālrunis</div>
+          <a href="tel:+37129384845" className="contact-link">
+            +371 29384845
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* LIGHTBOX */}
       {activeIndex !== null && (
