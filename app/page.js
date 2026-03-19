@@ -55,7 +55,7 @@ export default function SiguldaHomesLandingPage() {
       {/* HERO */}
       <section className="hero-fullscreen">
         <Image
-          src="/73_5X8A6434 (1).jpg"
+          src="/hero.jpeg"
           alt="Modernas mājas Siguldā"
           fill
           priority
