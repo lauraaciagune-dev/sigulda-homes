@@ -137,6 +137,38 @@ export default function SiguldaHomesLandingPage() {
         </div>
       </section>
 
+{/* FLOOR PLAN */}
+<section className="section section-alt">
+  <div className="container">
+    <h2>Plānojums</h2>
+    <p className="section-intro">
+      Skatīt pilnu mājas plānu PDF formātā.
+    </p>
+
+    <div className="floorplan-card">
+      <a
+        href="/floor-plan.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="floorplan-link"
+      >
+        <div className="floorplan-preview">
+          <div className="floorplan-preview-inner">
+            Floor plan
+          </div>
+        </div>
+
+        <div className="floorplan-text">
+          <div className="floorplan-title">Atvērt plānojumu</div>
+          <div className="floorplan-subtitle">
+            Atver PDF, lai skatītu pilnā izmērā un pietuvinātu
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
       {/* CONTACT */}
       <section id="kontakti" className="section">
         <div className="container">
