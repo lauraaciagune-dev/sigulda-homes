@@ -169,6 +169,27 @@ export default function SiguldaHomesLandingPage() {
   </div>
 </section>
 
+{/* PLĀNOJUMS */}
+<section className="section section-alt">
+  <div className="container">
+    <h2>Plānojums</h2>
+
+    <p className="section-intro">
+      Skatīt pilnu plānojumu:
+    </p>
+
+    <a
+      href="/floor-plan.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="button button-dark"
+    >
+      Atvērt plānojumu
+    </a>
+
+  </div>
+</section>
+
       {/* CONTACT */}
       <section id="kontakti" className="section">
         <div className="container">
