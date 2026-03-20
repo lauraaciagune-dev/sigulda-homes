@@ -115,24 +115,10 @@ export default function SiguldaHomesLandingPage() {
       </p>
 
       <p className="text">
-        Katra māja ir daļēji aprīkota — pilnībā aprīkota virtuve, iebūvēti skapji,
+        Katra māja ir daļēji aprīkota: pilnībā aprīkota virtuve, iebūvēti skapji,
         veļas istaba, terase ar nojumi, gaisa kondicionieri, gaisa rekuperācijas
         sistēma, signalizācijas sistēma un citi noderīgi papildinājumi.
       </p>
-
-      <div className="about-highlight-row">
-        <div className="about-highlight-card">
-          <div className="about-highlight-value">145 m²</div>
-          <div className="about-highlight-label">Plaša dzīvojamā platība</div>
-        </div>
-
-        <div className="about-highlight-card">
-          <div className="about-highlight-value">3 guļamistabas</div>
-          <div className="about-highlight-label">Piemērota ģimenes ikdienai</div>
-        </div>
-      </div>
-    </div>
-
     <div className="card info-card warm-card info-card-strong">
       <h3>Galvenā informācija</h3>
       <div className="info-list">
