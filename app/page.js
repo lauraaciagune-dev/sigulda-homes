@@ -22,21 +22,56 @@ export default function SiguldaHomesLandingPage() {
 
 
   const gallery = [
-    { title: "Mājas ārpuse", file: "/73_5X8A6434 (1).jpg" },
-    { title: "Mājas ārpuse", file: "/77_5X8A6446.jpg" },
-    { title: "Vannas istaba", file: "/10_5X8A6239.jpg" },
-    { title: "Saimniecības telpa", file: "/12_5X8A6245.jpg" },
-    { title: "Dušas zona", file: "/14_5X8A6251.jpg" },
-    { title: "Sanmezgls", file: "/15_5X8A6254 (1).jpg" },
-    { title: "Guļamistaba", file: "/17_5X8A6260.jpg" },
-    { title: "Guļamistaba", file: "/19_5X8A6266.jpg" },
-    { title: "Skapis", file: "/20_5X8A6269 (1).jpg" },
-    { title: "Telpa", file: "/21_5X8A6272.jpg" },
-    { title: "Kāpņu zona", file: "/22_5X8A6275.jpg" },
-    { title: "Kāpņu zona", file: "/23_5X8A6278.jpg" },
-    { title: "Telpa", file: "/25_5X8A6284.jpg" },
-  ];
+  { title: "Skats", file: "/1skats.jpeg" },
+  { title: "Skats", file: "/2skats.jpeg" },
+  { title: "Skats", file: "/3skats.jpeg" },
+  { title: "Skats", file: "/4skats.jpg" },
 
+  { title: "Fasāde", file: "/5fasāde.jpg" },
+  { title: "Fasāde", file: "/6fasāde.jpg" },
+
+  { title: "Durvis", file: "/7durvis.jpg" },
+  { title: "Ieeja", file: "/8ieeja.jpg" },
+
+  { title: "Virtuve", file: "/9virtuve.jpg" },
+  { title: "Virtuve", file: "/10virtuve.jpg" },
+  { title: "Virtuve", file: "/11virtuve.jpg" },
+
+  { title: "Dzīvojamā istaba", file: "/12dzivistaba.jpg" },
+  { title: "Dzīvojamā istaba", file: "/13dzivistaba.jpg" },
+
+  { title: "Tualete", file: "/14tualete.jpg" },
+
+  { title: "Ofiss", file: "/15ofis.jpg" },
+  { title: "Ofiss", file: "/15ofiss.jpg" },
+  { title: "Kāpnes", file: "/15trepes.jpg" },
+
+  { title: "Otrais stāvs", file: "/16otrstavs.jpg" },
+
+  { title: "Veļas istaba", file: "/17velasistaba.jpg" },
+  { title: "Veļas istaba", file: "/18veļasistaba.jpg" },
+
+  { title: "Guļamistaba", file: "/19guļamistaba.jpg" },
+  { title: "Guļamistaba", file: "/20guļistaba.jpg" },
+
+  { title: "Skapis", file: "/21skapis.jpg" },
+  { title: "Kondicionieris", file: "/22kondicionieris.jpg" },
+  { title: "Temperatūras pults", file: "/23temppults.jpg" },
+
+  { title: "Vannas istaba", file: "/24vannasist.jpg" },
+  { title: "Vannas istaba", file: "/25vannasist.jpg" },
+  { title: "Duša", file: "/26duša.jpg" },
+
+  { title: "Guļamistaba", file: "/27aguļist.jpg" },
+  { title: "Guļamistaba", file: "/27bguļist.jpg" },
+  { title: "Guļamistaba", file: "/27guļist.jpg" },
+  { title: "Guļamistaba", file: "/28guļist.jpg" },
+
+  { title: "Guļamistaba", file: "/29guļist.jpg" },
+
+  { title: "Signalizācija", file: "/31signalizacija.jpg" },
+  { title: "Apkures telpa", file: "/32apkure.jpg" }
+];
   const [activeIndex, setActiveIndex] = useState(null);
 
   const openLightbox = (index) => setActiveIndex(index);
