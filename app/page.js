@@ -257,13 +257,14 @@ export default function SiguldaHomesLandingPage() {
       <h2>Lokācija</h2>
 
       <p className="text">
-        Mājas atrodas Siguldas pilsētas centrālajā daļā, mierīgā un drošā vidē,
+        Mājas atrodas Siguldas pilsētas centrālajā daļā - skaistā, mierīgā un drošā vidē,
         kas ir īpaši piemērota ģimenēm.
       </p>
 
       <p className="text">
-        Dažu minūšu gājiena attālumā pieejamas skolas, bērnudārzs, sporta centrs,
-        stadions, pilsētas trase, pārtikas veikals un bērnu laukumiņš.
+        Viss nepieciešamai komfortablai ikdienai ir pāris minūšu gājiena attālumā - 
+       skola, bērnudārzs, sporta centrs, stadions, pilsētas trase, pārtikas veikals, 
+       mežs un viss kas cits. 
       </p>
 
       <div className="location-address-box">
