@@ -179,7 +179,6 @@ export default function SiguldaHomesLandingPage() {
         </div>
       </div>
     </div>
-  </div>
 </section>
   
       {/* FEATURES */}
