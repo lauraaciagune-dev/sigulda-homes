@@ -140,7 +140,6 @@ export default function SiguldaHomesLandingPage() {
 <section className="section section-warm">
   <div className="container two-col about-grid">
     <div className="about-copy">
-      <div className="section-tag">Ģimenēm piemērota dzīvesvieta</div>
       <h2>Par māju</h2>
 
       <p className="text">
