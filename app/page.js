@@ -70,7 +70,18 @@ export default function SiguldaHomesLandingPage() {
   { title: "Guļamistaba", file: "/29guļist.jpg" },
 
   { title: "Signalizācija", file: "/31signalizacija.jpg" },
-  { title: "Apkures telpa", file: "/32apkure.jpg" }
+   { title: "Apkures telpa", file: "/32apkure.jpg" },
+
+  { title: "Skats", file: "/33o.jpeg" },
+  { title: "Skats", file: "/34o.jpeg" },
+  { title: "Skats", file: "/35o.jpeg" },
+  { title: "Skats", file: "/36o.jpeg" },
+  { title: "Skats", file: "/37o.jpeg" },
+  { title: "Skats", file: "/38oo.jpeg" },
+  { title: "Skats", file: "/39o.jpeg" },
+  { title: "Skats", file: "/40o.jpeg" },
+  { title: "Skats", file: "/41o.jpeg" },
+  { title: "Skats", file: "/42o.jpeg" }
 ];
   const [activeIndex, setActiveIndex] = useState(null);
 
