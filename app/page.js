@@ -154,88 +154,87 @@ export default function SiguldaHomesLandingPage() {
         veļas istaba, terase ar nojumi, gaisa kondicionieri, gaisa rekuperācijas
         sistēma, signalizācijas sistēma un citi noderīgi papildinājumi.
       </p>
-    <div className="card info-card warm-card info-card-strong">
-      <h3>Galvenā informācija</h3>
-      <div className="info-list">
-        <div className="info-row">
-          <span>Adrese</span>
-          <strong>Krišjāņa Barona iela 39, Sigulda</strong>
-        </div>
-        <div className="info-row">
-          <span>Īres maksa</span>
-          <strong>2000 € mēnesī</strong>
-        </div>
-        <div className="info-row">
-          <span>Platība</span>
-          <strong>145 m²</strong>
-        </div>
-        <div className="info-row">
-          <span>Māju skaits projektā</span>
-          <strong>6 mājas / 3 dvīņu mājas</strong>
-        </div>
-        <div className="info-row no-border">
-          <span>Kontakts</span>
-          <strong>Ingus · +371 29384845</strong>
+
+      <div className="card info-card warm-card info-card-strong">
+        <h3>Galvenā informācija</h3>
+        <div className="info-list">
+          <div className="info-row">
+            <span>Adrese</span>
+            <strong>Krišjāņa Barona iela 39, Sigulda</strong>
+          </div>
+          <div className="info-row">
+            <span>Īres maksa</span>
+            <strong>2000 € mēnesī</strong>
+          </div>
+          <div className="info-row">
+            <span>Platība</span>
+            <strong>145 m²</strong>
+          </div>
+          <div className="info-row">
+            <span>Māju skaits projektā</span>
+            <strong>6 mājas / 3 dvīņu mājas</strong>
+          </div>
+          <div className="info-row no-border">
+            <span>Kontakts</span>
+            <strong>Ingus · +371 29384845</strong>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 </section>
-  
-      {/* FEATURES */}
-      <section className="section section-soft">
-        <div className="container">
-          <h2>Plānojums un aprīkojums</h2>
-          <p className="section-intro">
-            Svarīgākā informācija par telpām un iekļauto aprīkojumu.
-          </p>
 
-          <div className="feature-grid">
-            {features.map((feature) => (
-              <div key={feature} className="card feature-card warm-card">
-                {feature}
-              </div>
-            ))}
-          </div>
+{/* FEATURES */}
+<section className="section section-soft">
+  <div className="container">
+    <h2>Plānojums un aprīkojums</h2>
+    <p className="section-intro">
+      Svarīgākā informācija par telpām un iekļauto aprīkojumu.
+    </p>
+
+    <div className="feature-grid">
+      {features.map((feature) => (
+        <div key={feature} className="card feature-card warm-card">
+          {feature}
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
-      {/* GALLERY */}
-      <section id="galerija" className="section section-warm">
-        <div className="container">
-          <h2>Foto galerija</h2>
-          <p className="section-intro">
-          
-          </p>
+{/* GALLERY */}
+<section id="galerija" className="section section-warm">
+  <div className="container">
+    <h2>Foto galerija</h2>
+    <p className="section-intro"></p>
 
-          <div className="gallery-grid large-gallery-grid">
-            {gallery.map((item, index) => (
-              <button
-                key={item.file}
-                className="gallery-card gallery-card-button"
-                onClick={() => openLightbox(index)}
-                type="button"
-              >
-                <div className="gallery-image-wrap large-gallery-image-wrap">
-                  <Image
-                    src={item.file}
-                    alt={item.title}
-                    fill
-                    className="gallery-image"
-                  />
-                </div>
-              </button>
-            ))}
+    <div className="gallery-grid large-gallery-grid">
+      {gallery.map((item, index) => (
+        <button
+          key={item.file}
+          className="gallery-card gallery-card-button"
+          onClick={() => openLightbox(index)}
+          type="button"
+        >
+          <div className="gallery-image-wrap large-gallery-image-wrap">
+            <Image
+              src={item.file}
+              alt={item.title}
+              fill
+              className="gallery-image"
+            />
           </div>
-        </div>
-      </section>
+        </button>
+      ))}
+    </div>
+  </div>
+</section>
 
-    {/* FLOOR PLAN */}
+{/* FLOOR PLAN */}
 <section className="section section-soft">
   <div className="container">
     <h2>Mājas plānojums</h2>
-    <p className="section-intro">
-      
-    </p>
+    <p className="section-intro"></p>
 
     <a
       href="/floor-plan.pdf"
@@ -245,10 +244,8 @@ export default function SiguldaHomesLandingPage() {
     >
       Atvērt plānojumu
     </a>
-
   </div>
 </section>
-
 {/* LOCATION */}
 <section className="section section-soft">
   <div className="container location-layout">
